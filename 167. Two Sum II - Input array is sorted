@@ -1,0 +1,7 @@
+class Solution:
+    def twoSum(self, numbers, target):
+        dic={}
+        for i,number in enumerate(numbers):
+            if((target-number) in dic):
+                return [dic[target-number]+1,i+1]
+            dic[number] = i
