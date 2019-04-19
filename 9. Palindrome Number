@@ -3,3 +3,10 @@ class Solution:
     def isPalindrome(self, x: int) -> bool:
         str_x=str(x)
         return str_x==str_x[::-1]
+ me:
+ class Solution:
+    def isPalindrome(self, x):
+        a = list(str(x))
+        b = a.copy()
+        b.reverse()
+        return b == a
