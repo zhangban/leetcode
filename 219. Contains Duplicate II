@@ -1,0 +1,24 @@
+me:wrong
+class Solution:
+    def containsNearbyDuplicate(self, nums, k):
+        res = []
+        for i in nums:
+            if i not in res:
+                res += [i]
+            else:
+                if abs(len(res)-(res.index(i))) <= k:
+                    return True
+                else:
+                    return False
+ other people
+ class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        
+        seen = {}
+        
+        for idx, num in enumerate(nums):
+            if num in seen and idx-seen[num] <= k:
+                return True
+            else:
+                seen[num] = idx
+        return False
