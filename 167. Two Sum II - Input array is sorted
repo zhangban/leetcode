@@ -20,3 +20,13 @@ class Solution:
             if((target-number) in dic):
                 return [dic[target-number]+1,i+1]
             dic[number] = i
+
+
+
+190. Reverse Bits
+class Solution:
+    # @param n, an integer
+    # @return an integer
+    def reverseBits(self, n):
+        
+        return int(bin(n)[2:].zfill(32)[::-1],2)
