@@ -40,3 +40,17 @@ class Solution:
         s = "0"*(32 - len(s)) + s
         t = s[::-1]
         return int(t,2)
+ 58. Length of Last Word
+ class Solution(object):
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        s = s.split()
+        if s == []:
+            return 0
+        else:
+            return len(s[-1])
+ # I don't know why when inout 'a' will wong  , input "a" is right ???????????????????
+ 
