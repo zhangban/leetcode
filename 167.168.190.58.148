@@ -1,3 +1,12 @@
+
+67. Add Binary
+class Solution:
+    def addBinary(self, a: str, b: str) -> str:
+        n = int(a,base=2) + int(b,base=2)
+        return "{0:b}".format(n)
+        
+
+
 148. Sort List  https://leetcode.com/problems/sort-list/
 168 : https://leetcode.com/problems/excel-sheet-column-title/submissions/
 167. Two Sum II - Input array is sorted
